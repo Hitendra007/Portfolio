@@ -2,6 +2,7 @@ import React from 'react'
 import ProfileImage from '../../assets/Profile.jpg'
 import CollegeLogo from '../../assets/college.png'
 import SchoolLogo from '../../assets/school.png'
+import {skills} from '../../Constansts/constants.js'
 function About() {
     return (
         <div className='flex flex-col space-y-3  font-mono'>
@@ -65,6 +66,16 @@ function About() {
                     </div>
                     <p className='ml-auto text-right'>2016-2017</p>
                 </a>
+            </div>
+            <div>
+                <h1 className='font-bold text-2xl font-poppins'>Skills</h1>
+                <div className='flex flex-row flex-wrap'>
+                     {
+                        skills.map((skill,index)=>(
+                            <button key={index} className='bg-black text-white px-1 mx-1 rounded-md mt-1 hover:bg-gray-800'>{skill}</button>
+                        ))
+                     }
+                </div>
             </div>
         </div>
     )
