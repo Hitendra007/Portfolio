@@ -10,7 +10,7 @@ const BottomNavBar = () => {
     // Reduce the width of the navbar
     setIsHomeClicked(true);
 
-    // Optionally, reset the navbar width after a few seconds (you can adjust this delay)
+    // Optionally, reset the navbar width after a few seconds
     setTimeout(() => {
       setIsHomeClicked(false);
     }, 500); // Change 500ms delay as per your preference
@@ -18,19 +18,19 @@ const BottomNavBar = () => {
 
   return (
     <div
-      className={`fixed z-50 w-50 h-14 max-w-lg -translate-x-1/2 bg-white border border-gray-200 rounded-full bottom-4 left-1/2 transition-all ${
+      className={`fixed z-50 h-14 w-full lg:w-1/4 max-w-full sm:max-w-lg -translate-x-1/2 bg-white border border-gray-200 rounded-full bottom-4 left-1/2 transition-all ${
         isHomeClicked ? "max-w-xs" : "max-w-lg"
       }`}
     >
-      <div className="grid h-full grid-cols-5 mx-auto">
+      <div className="grid h-full grid-cols-5 gap-2 px-2 sm:px-5 items-center">
         {/* Home Button */}
         <button
           type="button"
           onClick={handleHomeClick}
-          className="inline-flex items-center justify-center px-5 w-50   rounded-s-full hover:bg-gray-50 group"
+          className="inline-flex items-center justify-center p-2 hover:bg-gray-50 rounded-full group"
         >
           <svg
-            className="w-6 h-6 text-black group-hover:text-black-500"
+            className="w-5 h-5 sm:w-6 sm:h-6 text-black group-hover:text-gray-500"
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
             viewBox="0 0 20 20"
@@ -44,10 +44,10 @@ const BottomNavBar = () => {
           href="https://drive.google.com/file/d/1_tCIzW93PekTN98DD46YtLfczGlZdMwT/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center justify-center px-5 hover:bg-gray-50 group"
+          className="inline-flex items-center justify-center p-2 hover:bg-gray-50 rounded-full group"
         >
           <svg
-            className="w-6 h-6 text-black group-hover:text-black-500"
+            className="w-5 h-5 sm:w-6 sm:h-6 text-black group-hover:text-gray-500"
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
             viewBox="0 0 20 20"
@@ -61,10 +61,10 @@ const BottomNavBar = () => {
           href="https://github.com/Hitendra007"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center justify-center px-5 hover:bg-gray-50 group"
+          className="inline-flex items-center justify-center p-2 hover:bg-gray-50 rounded-full group"
         >
           <svg
-            className="w-6 h-6 text-black group-hover:text-black-500"
+            className="w-5 h-5 sm:w-6 sm:h-6 text-black group-hover:text-gray-500"
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
             viewBox="0 0 20 20"
@@ -78,10 +78,10 @@ const BottomNavBar = () => {
           href="https://www.linkedin.com/in/hitendrasingh1729/"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center justify-center px-5 hover:bg-gray-50 group"
+          className="inline-flex items-center justify-center p-2 hover:bg-gray-50 rounded-full group"
         >
           <svg
-            className="w-6 h-6 text-black group-hover:text-black-500"
+            className="w-5 h-5 sm:w-6 sm:h-6 text-black group-hover:text-gray-500"
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
             viewBox="0 0 20 20"
@@ -93,15 +93,15 @@ const BottomNavBar = () => {
         {/* Email */}
         <a
           href="mailto:hitendra369432@gmail.com"
-          className="inline-flex items-center justify-center px-5 rounded-e-full hover:bg-gray-50 group"
+          className="inline-flex items-center justify-center p-2 hover:bg-gray-50 rounded-full group"
         >
           <svg
-            className="w-6 h-6 text-black group-hover:text-black-500"
+            className="w-5 h-5 sm:w-6 sm:h-6 text-black group-hover:text-gray-500"
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
             viewBox="0 0 20 20"
           >
-            <path d="M18 3H2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Zm0 2v.217L10 10 2 5.217V5Zm0 10H2V7l8 5 8-5v8Z" />
+            <path d="M18 3H2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Zm0 2v.217L10 10 2 5.217V5Zm0 10H2V7l8 5 8-5Z" />
           </svg>
         </a>
       </div>
