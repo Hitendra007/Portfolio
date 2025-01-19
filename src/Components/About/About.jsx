@@ -9,7 +9,7 @@ function About() {
             <div className="flex flex-row ">
                 <div className='flex flex-col'>
                     <h1 className="font-poppins font-extrabold text-5xl">Hi, I'm Hitendra 🙋‍♂️</h1>
-                    <p className=" text-lg max-w-2xl">
+                    <p className="text-base  max-w-2xl">
                         Passionate aspiring full-stack developer, driven to create innovative and impactful web applications that make a real difference.
                     </p>
                 </div>
@@ -20,8 +20,8 @@ function About() {
                 />
             </div>
             <div className='flex flex-col'>
-                <h1 className='font-poppins font-bold text-2xl'>About</h1>
-                <p className='text-lg max-w-2xl'>I'm Hitendra Singh, a dedicated full-stack developer with a passion for crafting innovative web applications. I enjoy tackling complex challenges and turning them into user-friendly solutions. My coding journey includes practicing questions on LeetCode, where I sharpen my problem-solving skills. I'm excited to collaborate and bring ideas to life!</p>
+                <h1 className=' font-bold text-2xl'>About</h1>
+                <p className='text-base max-w-2xl'>I'm Hitendra Singh, a dedicated full-stack developer with a passion for crafting innovative web applications. I enjoy tackling complex challenges and turning them into user-friendly solutions. My coding journey includes practicing questions on LeetCode, where I sharpen my problem-solving skills. I'm excited to collaborate and bring ideas to life!</p>
             </div>
             <div className='flex flex-col'>
                 <h1 className='font-poppins font-bold text-2xl'>Education</h1>

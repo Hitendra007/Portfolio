@@ -4,7 +4,7 @@ import { projects } from '../../Constansts/constants.js';
 
 function Projects() {
     return (
-        <div className="flex flex-col mt-2">
+        <div className="flex flex-col mt-3">
             <button className="bg-black text-white px-1 mx-1 rounded-md mt-1 text-center p-1 font-bold">
                 My Projects
             </button>
@@ -14,7 +14,7 @@ function Projects() {
             </p>
             <div className="flex flex-wrap justify-center gap-4  p-3">
                 {projects.map((project, index) => (
-                    <div key={index} className="outline outline-1 outline-gray-300 flex flex-col rounded-md bg-white p-1 w-full hover:shadow-lg transition-shadow md:w-[45%]" style={{ alignSelf: "flex-start" }}>
+                    <div key={index} className="outline outline-1 outline-gray-300 shadow flex flex-col rounded-md bg-white p-1 w-full hover:shadow-lg transition-shadow md:w-[45%]" style={{ alignSelf: "flex-start" }}>
                         {project.mediaType === 'video' ? (
                             <video
                                 autoPlay

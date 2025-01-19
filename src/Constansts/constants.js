@@ -74,20 +74,45 @@ const codingProfiles = [
         platform: "LeetCode",
         description: "Data Structures & Algorithms",
         profileLink: "https://leetcode.com/u/hitendra_singh1729/",
-        avatar: "/media/icons/leetcode.png" // optional avatar or icon path
+        avatar: "/media/codingProfiles/Leetcode.webp" // optional avatar or icon path
     },
     {
         platform: "GeeksforGeeks",
         description: "Programming & Interview Prep",
         profileLink: "https://www.geeksforgeeks.org/user/hitendra369432/?ref=header_profile",
-        avatar: "/media/icons/geeksforgeeks.png" // optional avatar or icon path
+        avatar: "/media/codingProfiles/Gfg.png" // optional avatar or icon path
     },
     {
         platform: "HackerRank",
         description: "Learn and practice programming languages",
         profileLink: "https://www.hackerrank.com/profile/hitendra369432",
-        avatar: "/media/icons/hackerrank.png" // optional avatar or icon path
+        avatar: "/media/codingProfiles/Hackerrank.png" // optional avatar or icon path
     }
 ];
 
-export { skills, projects,codingProfiles};
+const workExperience = [
+    {
+        company: "Lepton Software, Gurgaon",
+        role: "Software Engineer Intern",
+        duration: "June 2024 – Nov 2024",
+        description: [
+            "Contributed to a telecom project involving large-scale geospatial data processing for nationwide datasets.",
+            "Optimized API performance, fine-tuning SQL queries to achieve a reduction in latency, enhancing application responsiveness.",
+            "Processed and loaded large datasets into the database using custom data pipelines, ensuring accuracy and performance.",
+            "Executed comprehensive large-scale data migrations that ensured seamless transitions between systems.",
+            "Created a malaria prediction API for specific regions, boosting sales for a mosquito Buster brand by providing targeted insights."
+        ]
+    },
+    {
+        company: "ZappInvest, Remote",
+        role: "Full Stack Developer Intern",
+        duration: "Jan 2024 – May 2024",
+        description: [
+            "Worked as a frontend developer, creating UI components in React.",
+            "Developed APIs and routes for the website’s backend functionality."
+        ]
+    },
+    
+];
+
+export { skills, projects,codingProfiles,workExperience};
