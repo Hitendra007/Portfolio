@@ -3,6 +3,8 @@ const skills = [
     "JavaScript",
     "React.js",
     "Node.js",
+    "ExpresJs",
+    "FastAPI",
     "Python",
     "Django",
     "Docker",
@@ -47,46 +49,35 @@ const projects = [
         githubLink: "https://github.com/Hitendra007/MediaMaven",
         mediaType: "video",
         media: "/media/mediaMaven/mediaMaven.mp4"
-
-    }, {
-        name: "MERN Todo Application",
-        technologies: ["React", "Node.js", "Express", "MongoDB", "CSS"],
-        description: `This is a full-stack application with a React frontend and Express backend. 
-        It features secure user authentication, task management, and a responsive design. 
-        Although not very UI-oriented, this app was created to learn and understand the full-stack application flow.
-        Access control is enforced using protected routes, restricting access to specific pages.
-        Middleware ensures that only verified users with valid tokens can interact with secured backend APIs.`,
-        githubLink: "https://github.com/Hitendra007/MernTodoApplication",
-        mediaType: "image",
-        media: [
-            "/media/merntodo/home.png",
-            "/media/merntodo/login.png",
-            "/media/merntodo/signup.png",
-            "/media/merntodo/todos.png"
-        ]
+    },
+    {
+        name: "Chat with PDF AI Assistant",
+        technologies: ["FastAPI", "React.js", "PostgreSQL", "Qdrant", "WebSocket", "JWT","OpenAI"],
+        description: "An AI-powered document assistant that enables users to upload PDFs and interact with them via chat. Implemented PDF upload, vector embedding using Qdrant, and contextual retrieval with LLMs. Developed a real-time chat interface using WebSocket and React, integrated with JWT-based authentication. Stored chat history in PostgreSQL and added future plans for query propagation for better legal document understanding.",
+        githubLink: "https://github.com/Hitendra007/pdf_chat-assistant-backend",
+        mediaType: "video",
+        media: "/media/chatdocai/chatdoc.mp4"
     }
-
 ];
-
 
 const codingProfiles = [
     {
         platform: "LeetCode",
         description: "Data Structures & Algorithms",
         profileLink: "https://leetcode.com/u/hitendra_singh1729/",
-        avatar: "/media/codingProfiles/Leetcode.webp" // optional avatar or icon path
+        avatar: "/media/codingProfiles/Leetcode.webp"
     },
     {
         platform: "GeeksforGeeks",
         description: "Programming & Interview Prep",
         profileLink: "https://www.geeksforgeeks.org/user/hitendra369432/?ref=header_profile",
-        avatar: "/media/codingProfiles/Gfg.png" // optional avatar or icon path
+        avatar: "/media/codingProfiles/Gfg.png"
     },
     {
         platform: "HackerRank",
         description: "Learn and practice programming languages",
         profileLink: "https://www.hackerrank.com/profile/hitendra369432",
-        avatar: "/media/codingProfiles/Hackerrank.png" // optional avatar or icon path
+        avatar: "/media/codingProfiles/Hackerrank.png"
     }
 ];
 
@@ -111,8 +102,7 @@ const workExperience = [
             "Worked as a frontend developer, creating UI components in React.",
             "Developed APIs and routes for the website’s backend functionality."
         ]
-    },
-    
+    }
 ];
 
-export { skills, projects,codingProfiles,workExperience};
+export { skills, projects, codingProfiles, workExperience };
