@@ -52,7 +52,7 @@ const projects = [
     },
     {
         name: "Chat with PDF AI Assistant",
-        technologies: ["FastAPI", "React.js", "PostgreSQL", "Qdrant", "WebSocket", "JWT","OpenAI"],
+        technologies: ["FastAPI", "React.js", "PostgreSQL", "Qdrant vectorDB", "WebSocket", "JWT","OpenAI","Docker"],
         description: "An AI-powered document assistant that enables users to upload PDFs and interact with them via chat. Implemented PDF upload, vector embedding using Qdrant, and contextual retrieval with LLMs. Developed a real-time chat interface using WebSocket and React, integrated with JWT-based authentication. Stored chat history in PostgreSQL and added future plans for query propagation for better legal document understanding.",
         githubLink: "https://github.com/Hitendra007/pdf_chat-assistant-backend",
         mediaType: "video",
