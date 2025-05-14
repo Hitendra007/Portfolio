@@ -82,27 +82,27 @@ const codingProfiles = [
 ];
 
 const workExperience = [
-    {
-        company: "Lepton Software, Gurgaon",
-        role: "Software Engineer Intern",
-        duration: "June 2024 – Nov 2024",
-        description: [
-            "Contributed to a telecom project involving large-scale geospatial data processing for nationwide datasets.",
-            "Optimized API performance, fine-tuning SQL queries to achieve a reduction in latency, enhancing application responsiveness.",
-            "Processed and loaded large datasets into the database using custom data pipelines, ensuring accuracy and performance.",
-            "Executed comprehensive large-scale data migrations that ensured seamless transitions between systems.",
-            "Created a malaria prediction API for specific regions, boosting sales for a mosquito Buster brand by providing targeted insights."
-        ]
-    },
-    {
-        company: "ZappInvest, Remote",
-        role: "Full Stack Developer Intern",
-        duration: "Jan 2024 – May 2024",
-        description: [
-            "Worked as a frontend developer, creating UI components in React.",
-            "Developed APIs and routes for the website’s backend functionality."
-        ]
-    }
+  {
+    company: "Lepton Software, Gurgaon",
+    role: "Software Engineer Intern",
+    duration: "June 2024 – Nov 2024",
+    description: [
+      "Optimized telecom API performance, achieving a 35% reduction in latency and enhancing responsiveness.",
+      "Constructed scalable data pipelines using Apache Airflow for real-time ingestion of nationwide datasets, facilitating a 40% improvement in data processing speeds and accuracy.",
+      "Executed comprehensive data migrations, ensuring 100% seamless system transitions.",
+      "Developed a Malaria prediction API that contributed to a 15% sales boost for a mosquito repellent brand."
+    ]
+  },
+  {
+    company: "ZappInvest, Remote",
+    role: "Full Stack Developer Intern",
+    duration: "Jan 2024 – May 2024",
+    description: [
+      "Leveraged React.js and Redux to architect reusable, interactive UI components for the practitioner portal, accelerating page load times by 40% and decreasing bounce rate by 15%.",
+      "Built and integrated secure REST APIs."
+    ]
+  }
 ];
+
 
 export { skills, projects, codingProfiles, workExperience };

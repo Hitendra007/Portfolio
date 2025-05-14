@@ -41,7 +41,7 @@ const BottomNavBar = () => {
 
         {/* Download Resume */}
         <a
-          href="https://drive.google.com/file/d/1_tCIzW93PekTN98DD46YtLfczGlZdMwT/view?usp=sharing"
+          href="https://drive.google.com/file/d/1tkxIDgEBMzOZiPYT_5Q1QtekSZVDbK1O/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center justify-center p-2 hover:bg-gray-50 rounded-full group"
