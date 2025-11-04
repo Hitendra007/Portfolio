@@ -106,6 +106,7 @@ const workExperience = [
     company: "Lepton Software, Gurgaon",
     role: "Software Engineer Intern",
     duration: "June 2024 – Nov 2024",
+    location: "Gurgaon, India",
     description: [
       "Optimized telecom API performance, achieving a 35% reduction in latency and enhancing responsiveness.",
       "Constructed scalable data pipelines using Apache Airflow for real-time ingestion of nationwide datasets, facilitating a 40% improvement in data processing speeds and accuracy.",
@@ -117,6 +118,7 @@ const workExperience = [
     company: "ZappInvest, Remote",
     role: "Full Stack Developer Intern",
     duration: "Jan 2024 – May 2024",
+    location: "Jaipur, Rajasthan, India · Remote",
     description: [
       "Leveraged React.js and Redux to architect reusable, interactive UI components for the practitioner portal, accelerating page load times by 40% and decreasing bounce rate by 15%.",
       "Built and integrated secure REST APIs."
