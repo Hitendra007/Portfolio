@@ -83,6 +83,26 @@ const codingProfiles = [
 
 const workExperience = [
   {
+    company: "Toonsutra",
+    role: "Software Engineer",
+    duration: "Jun 2025 – Present · 6 mos",
+    location: "United States · Remote",
+    logo: "/media/company/toonsutra.jpg",
+    description: [
+      "Built and scaled backend APIs for Toonsutra’s digital comics platform (Django, Node.js).",
+      "Optimized APIs reduced average response time from ~60s to 600 ms.",
+      "Designed data pipelines and caching using Redis and OpenSearch to improve content delivery and reliability.",
+      "Moved read-heavy data from MySQL to OpenSearch for faster access and search performance.",
+      "Migrated data storage from MySQL to MongoDB, refactoring APIs to a document model.",
+      "Implemented a custom queue system for video/audio generation microservices with rate-limiting.",
+      "Implemented a video transcoding pipeline to produce multi-bitrate outputs for adaptive streaming (HLS).",
+      "Improved search by creating and optimizing OpenSearch indices and scheduling periodic sync jobs.",
+      "Built CI/CD using a self-hosted runner to deploy to VMs, configured DNS, and automated deployments with Bitbucket Pipelines, Docker, and GCP Cloud Run.",
+      "Integrated Juspay single-order payment system.",
+      "Troubleshot and fixed critical production bugs to maintain stability and uptime."
+    ]
+  },
+  {
     company: "Lepton Software, Gurgaon",
     role: "Software Engineer Intern",
     duration: "June 2024 – Nov 2024",

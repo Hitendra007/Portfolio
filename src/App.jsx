@@ -31,15 +31,16 @@ function App() {
       <div
         className={`mx-auto mt-10 px-4 sm:px-6 md:px-8 lg:px-10 w-full sm:w-4/5 md:w-3/5 lg:w-2/5 ${
           isLoading ? "opacity-30 pointer-events-none" : "opacity-100"
-        } transition-opacity duration-500`}
+        } transition-opacity duration-500 bg-white/80 backdrop-blur rounded-2xl shadow-lg ring-1 ring-gray-100 py-6`}
       >
         <About />
         <Projects />
         <Coding />
         <WorkExperience />
         <Contact />
-        <BottomNavBar />
       </div>
+      {/* Keep navbar outside the container so it always stays on top and visible */}
+      <BottomNavBar />
     </>
   );
 }

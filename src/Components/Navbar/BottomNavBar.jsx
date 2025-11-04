@@ -7,30 +7,24 @@ const BottomNavBar = () => {
     // Scroll to the top of the page
     window.scrollTo({ top: 0, behavior: "smooth" });
 
-    // Reduce the width of the navbar
+    // Optional click feedback (no shrinking to avoid layout jump)
     setIsHomeClicked(true);
-
-    // Optionally, reset the navbar width after a few seconds
-    setTimeout(() => {
-      setIsHomeClicked(false);
-    }, 500); // Change 500ms delay as per your preference
+    setTimeout(() => setIsHomeClicked(false), 200);
   };
 
   return (
     <div
-      className={`fixed z-50 h-14 w-full lg:w-1/4 max-w-full sm:max-w-lg -translate-x-1/2 bg-white border border-gray-200 rounded-full bottom-4 left-1/2 transition-all ${
-        isHomeClicked ? "max-w-xs" : "max-w-lg"
-      }`}
+      className={`fixed z-[60] h-16 w-full max-w-xl sm:max-w-2xl lg:max-w-lg -translate-x-1/2 bg-white/95 backdrop-blur-md rounded-full bottom-5 left-1/2 transition-all shadow-xl ring-1 ring-gray-200`}
     >
-      <div className="grid h-full grid-cols-5 gap-2 px-2 sm:px-5 items-center">
+      <div className="grid h-full grid-cols-5 gap-1 sm:gap-2 px-2 sm:px-4 items-center">
         {/* Home Button */}
         <button
           type="button"
           onClick={handleHomeClick}
-          className="inline-flex items-center justify-center p-2 hover:bg-gray-50 rounded-full group"
+          className="inline-flex items-center justify-center p-3 hover:bg-gray-50 rounded-full group"
         >
           <svg
-            className="w-5 h-5 sm:w-6 sm:h-6 text-black group-hover:text-gray-500"
+            className={`w-7 h-7 text-gray-900 ${isHomeClicked ? 'scale-95' : ''} group-hover:text-gray-600 transition-transform`}
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
             viewBox="0 0 20 20"
@@ -44,10 +38,10 @@ const BottomNavBar = () => {
           href="https://drive.google.com/file/d/1tkxIDgEBMzOZiPYT_5Q1QtekSZVDbK1O/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center justify-center p-2 hover:bg-gray-50 rounded-full group"
+          className="inline-flex items-center justify-center p-3 hover:bg-gray-50 rounded-full group"
         >
           <svg
-            className="w-5 h-5 sm:w-6 sm:h-6 text-black group-hover:text-gray-500"
+            className="w-7 h-7 text-gray-900 group-hover:text-gray-600"
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
             viewBox="0 0 20 20"
@@ -61,10 +55,10 @@ const BottomNavBar = () => {
           href="https://github.com/Hitendra007"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center justify-center p-2 hover:bg-gray-50 rounded-full group"
+          className="inline-flex items-center justify-center p-3 hover:bg-gray-50 rounded-full group"
         >
           <svg
-            className="w-5 h-5 sm:w-6 sm:h-6 text-black group-hover:text-gray-500"
+            className="w-7 h-7 text-gray-900 group-hover:text-gray-600"
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
             viewBox="0 0 20 20"
@@ -78,10 +72,10 @@ const BottomNavBar = () => {
           href="https://www.linkedin.com/in/hitendrasingh1729/"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center justify-center p-2 hover:bg-gray-50 rounded-full group"
+          className="inline-flex items-center justify-center p-3 hover:bg-gray-50 rounded-full group"
         >
           <svg
-            className="w-5 h-5 sm:w-6 sm:h-6 text-black group-hover:text-gray-500"
+            className="w-7 h-7 text-gray-900 group-hover:text-gray-600"
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
             viewBox="0 0 20 20"
@@ -93,10 +87,10 @@ const BottomNavBar = () => {
         {/* Email */}
         <a
           href="mailto:hitendra369432@gmail.com"
-          className="inline-flex items-center justify-center p-2 hover:bg-gray-50 rounded-full group"
+          className="inline-flex items-center justify-center p-3 hover:bg-gray-50 rounded-full group"
         >
           <svg
-            className="w-5 h-5 sm:w-6 sm:h-6 text-black group-hover:text-gray-500"
+            className="w-7 h-7 text-gray-900 group-hover:text-gray-600"
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
             viewBox="0 0 20 20"
